@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>绒绒虫</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!--[if lt IE 9]>
+  <script src="lib/html5shiv/html5shiv.js"></script>
+  <script src="lib/respond/respond.min.js"></script>
+  <![endif]-->
+  <!--  sdjfs  -->
+
+</head>
+<body>
+<!-- header S-->
+<header>
+
+</header>
+<!-- header E-->
+
+<!--content S-->
+<section class="container content">
+  <div class="row">
+    <div class="logo fl">
+      <img src="img/logo.png" alt="绒绒虫" title="绒绒虫" >
+    </div>
+    <h2>绒绒虫</h2>
+    <span class="webName">RONGRONGCHONG</span>
+    <!-- logn -->
+    <button type="button" class="btn btn-primary fr register" data-toggle="modal" data-target=".bs-example-modal-sm">登录
+    </button>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          ...
+        </div>
+      </div>
+    </div>
+     <!-- register-->
+    <!--<button type="button" class="btn btn-primary fr login" data-toggle="modal" data-target=".bs-example-modal-sm">注册-->
+    <!--</button>-->
+    <button type="button" class="btn btn-primary fr login" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">注册</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+<!--content S-->
+
+
+<!--footer S-->
+<footer></footer>
+<!--footer S-->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+  })
+</script>
+</body>
+</html>
