@@ -14,7 +14,7 @@
   <script src="lib/html5shiv/html5shiv.js"></script>
   <script src="lib/respond/respond.min.js"></script>
   <![endif]-->
-  <!--  sdjfs  -->
+  <!--  sdjfs-->
 
 </head>
 <body>
@@ -33,49 +33,58 @@
     <h2>绒绒虫</h2>
     <span class="webName">RONGRONGCHONG</span>
     <!-- logn -->
-    <button type="button" class="btn btn-primary fr register" data-toggle="modal" data-target=".bs-example-modal-sm">登录
+    <button type="button" class="btn btn-primary fr register" id="btnRegister" data-toggle="modal" data-target=".bs-example-modal-sm">登录
     </button>
-
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          ...
-        </div>
-      </div>
-    </div>
-     <!-- register-->
-    <!--<button type="button" class="btn btn-primary fr login" data-toggle="modal" data-target=".bs-example-modal-sm">注册-->
-    <!--</button>-->
     <button type="button" class="btn btn-primary fr login" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">注册</button>
+
+    <div id="signIn" class="fr">
+      <form action="" method="post">
+        <input type="text" placeholder="username"><br>
+        <input type="text" placeholder="password"><br>
+        <button class="btn btn-primary">SIGN IN</button>
+      </form>
+
+    </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+            <h4 >注册账号</h4>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="control-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="control-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
+            <form action="" method="post">
+              <label for="sel">类型&nbsp &nbsp
+                <select name="" id="sel">
+                  <option value="">组织</option>
+                  <option value="">个人</option>
+                </select>
+              </label>
+              <span>选择组织或个人</span><br>
+
+              <label for="userName">账 号&nbsp &nbsp<input type="number" id="userName"></label><span>输入11位手机号码</span><br>
+              <label for="passWord">密 码&nbsp &nbsp<input type="text" id="passWord"></label><span>6-18位区分大小写</span><br>
+              <label for="captcha">验证码<input type="text" id="captcha"></label><img src="" alt="" id="captchaPic">
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-primary submit">确认</button>
           </div>
         </div>
       </div>
     </div>
 
+  </div>
 
+  <div class="slogan">
+
+    <h2>Meet another life</h2>
+    <span> 遇见另一种生活</span>
+  </div>
+
+  <div class=" copyRight fr">
+    <span>涓滴科技©2015-2015 鲁 ICP 备 13025399号 </span>
   </div>
 
 </section>
@@ -89,14 +98,21 @@
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script>
   $('#exampleModal').on('show.bs.modal', function (event) {
+    $("#signIn").fadeOut();
     var button = $(event.relatedTarget) // Button that triggered the modal
     var recipient = button.data('whatever') // Extract info from data-* attributes
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
+//    modal.find('.modal-title').text('New message to ' + recipient)
+//    modal.find('.modal-body input').val(recipient)
   })
+
+
+  $("#btnRegister").on('click',function(){
+//    $("#signIn").addClass("showInlineBlock");
+    $("#signIn").fadeIn();
+  });
 </script>
 </body>
 </html>
