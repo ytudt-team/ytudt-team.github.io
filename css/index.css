@@ -101,11 +101,11 @@
     margin-left: 20px;
   }
 
-  .content #captchaPic{
-    width: 100px;
-    height: 30px;
-    border: 1px solid #ccc;
-  }
+  /*.content #captchaPic{*/
+    /*width: 100px;*/
+    /*height: 30px;*/
+    /*border: 1px solid #ccc;*/
+  /*}*/
   .content  .submit {
     position: relative;
     left:-280px;
@@ -113,15 +113,16 @@
 
   .content .slogan {
     /*display: inline;*/
-    width: 300px;
+    width: 430px;
     height: 300px;
     color: white;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     margin: 50px auto;
     /*position: absolute;*/
-    z-index: 10;
+    /*z-index: 10;*/
   }
-  .content .slogan h2 {
+
+  .content .slogan h3 {
     display: block;
     text-align: center;
     color: white;
@@ -129,10 +130,34 @@
   .content .slogan span{
     display: inline-block;
     width: 100%;
+    letter-spacing:10px;
     margin-top: 10px;
     text-align: center;
     font: 500 36px "Microsoft YaHei" ;
   }
+  .content .slogan .downApp{
+    width: 426px;
+    height: 77px;
+    margin-top: 40px;
+    background: url("../img/downlink.png") no-repeat;
+  }
+  .content .slogan .downApp {
+    width: 430px;
+    height: 80px;
+    /*border: 1px solid #000;*/
+    
+  }
+  /*.content .slogan .downApp div {*/
+    /*!*display: inline-block;*!*/
+  /*}*/
+  .content .slogan .downApp a {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+  }
+
+
+
   .content .copyRight {
     position: relative;
     bottom: -50px;
