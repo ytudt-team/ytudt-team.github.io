@@ -13,12 +13,13 @@
   <script src="lib/respond/respond.min.js"></script>
   <![endif]-->
   <!--  sdjfs-->
+   <script src="lib/html5shiv/html5shiv.js"></script>
+
 
 </head>
 <body>
 <!-- header S-->
 <header>
-
 </header>
 <!-- header E-->
 
@@ -53,15 +54,15 @@
           </div>
           <div class="modal-body">
             <form action="" method="post">
-              <label for="sel">类型&nbsp &nbsp
+              <label for="sel">类型&nbsp; &nbsp;
                 <select name="" id="sel">
                   <option value="">组织</option>
                   <option value="">个人</option>
                 </select>
               </label>
               <span>选择组织或个人</span><br>
-              <label for="userName">账 号&nbsp &nbsp<input type="number" id="userName"></label><span>输入11位手机号码</span><br>
-              <label for="passWord">密 码&nbsp &nbsp<input type="text" id="passWord"></label><span>6-18位区分大小写</span><br>
+              <label for="userName">账 号&nbsp; &nbsp;<input type="number" id="userName"></label><span>输入11位手机号码</span><br>
+              <label for="passWord">密 码&nbsp; &nbsp;<input type="text" id="passWord"></label><span>6-18位区分大小写</span><br>
               <label for="captcha">验证码<input type="text" id="captcha"></label><a  id="getCaptcha" class="btn btn-primary" href="javascript:;">点击获取手机验证码</a>
             </form>
           </div>
@@ -105,7 +106,6 @@
     var modal = $(this)
 
   })
-
 
   $("#btnRegister").on('click',function(){
     $("#signIn").fadeIn();

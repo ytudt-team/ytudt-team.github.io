@@ -7,7 +7,8 @@
   <title>绒绒虫</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/manager.css">
+
   <!--[if lt IE 9]>
   <script src="lib/html5shiv/html5shiv.js"></script>
   <script src="lib/respond/respond.min.js"></script>
@@ -18,13 +19,79 @@
 <body>
 <!-- header S-->
 <header>
+  <div class="container">
+    <div class="row">
+      <div class="logo fl">
+        <div class="logPic"></div>
+        <h1>绒绒虫</h1>
+        <span>组织平台</span>
+      </div>
+      <div class="message fr">
+        <!--<span></span>-->
+        你好
+        <a href="javascript:;" id="username">赵建伟</a>
+
+        <a href="javascript:;" id="exit">退出</a>
+
+      </div>
+    </div>
+  </div>
+
 
 </header>
 <!-- header E-->
 
 <!--content S-->
 <section class="container content">
+<div class="row">
+  <!--<div>-->
 
+    <!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+    <!--<ul class="nav nav-tabs" role="tablist">-->
+      <!--<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>-->
+      <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>-->
+      <!--<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>-->
+      <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>-->
+    <!--</ul>-->
+
+    <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+    <!--<div class="tab-content">-->
+      <!--<div role="tabpanel" class="tab-pane active" id="home">1</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="profile">2</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="messages">3</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="settings">4</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+
+  <!-- Nav tabs -->
+
+  <ul class="nav nav-tabs fl" role="tablist">
+    <li role="presentation" class="head"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><a href="javascript:;"  disabled><span>首页</span></a></li>
+    <li role="presentation" class="head"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span><a href="#profile"  role="tab" data-toggle="tab"><span>组织管理</span></a></li>
+    <li role="presentation"><span></span><a href="#parameters" aria-controls="parameters" role="tab" data-toggle="tab">参数设置</a></li>
+    <li role="presentation"><span></span><a href="#members" aria-controls="members" role="tab" data-toggle="tab">成员管理</a></li>
+    <li role="presentation"><span></span><a href="#organization" aria-controls="organization" role="tab" data-toggle="tab">组织体系</a></li>
+    <li role="presentation" class="head"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span><a href="#settings"  role="tab" data-toggle="tab"><span>设置</span></a></li>
+    <li role="presentation"><span></span><a href="#account" aria-controls="account" role="tab" data-toggle="tab">账号信息</a></li>
+    <li role="presentation"><span></span><a href="#psdSet" aria-controls="psdSet" role="tab" data-toggle="tab">密码修改</a></li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content fr">
+    <div role="tabpanel" class="tab-pane active" id="parameters">parameters</div>
+    <div role="tabpanel" class="tab-pane" id="members">members</div>
+    <div role="tabpanel" class="tab-pane" id="organization">organization</div>
+    <div role="tabpanel" class="tab-pane" id="account">account</div>
+    <div role="tabpanel" class="tab-pane" id="psdSet">psdSet</div>
+
+  </div>
+
+
+
+
+  </div>
 </section>
 <!--content S-->
 
